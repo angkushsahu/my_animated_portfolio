@@ -1,0 +1,12 @@
+@media screen and (max-width: 800px) {
+    .icon_container { display: none; }
+    .mail_link { display: none; }
+    #contact_div { width: 80%; left: 10%; }
+}
+
+@media screen and (max-width: 650px) {
+    .image_section { display: none; }
+    .card_type_one_container { flex-direction: column; align-items: center; }
+    .education_and_skills { flex-direction: column;  }
+    .skills { min-width: 290px; }
+}
