@@ -19,24 +19,12 @@
 }
 
 .name {
-	position: relative;
-}
-
-.name::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0%;
-	border-left: 2px solid #ff4500;
-	background-color: #202020;
-	z-index: 1;
+	padding-left: 10px;
+	border-right: 2px solid #ff4500;
 }
 
 .show_off {
-	/* font-family: 'Moon Dance', cursive; */
-	font-family: cursive;
+	font-family: 'Moon Dance', cursive;
 	font-size: clamp(1.4rem, 6vw, 2rem);
 	text-align: center;
 	font-weight: 700;

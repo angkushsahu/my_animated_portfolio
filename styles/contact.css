@@ -5,10 +5,17 @@
     height: 80vh; top: 10vh;
     z-index: 3;
 
-    display: none;
+    display: flex;
+    transform: scale(0);
+    transition: transform 500ms ease;
+
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+}
+
+#contact_div.toggle_contact_div {
+    transform: scale(1);
 }
 
 .close_button {

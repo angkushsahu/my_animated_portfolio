@@ -1,22 +1,24 @@
 const root = document.getElementById("root");
+const contactDiv = document.getElementById("contact_div");
+
 function showContactDetails() {
     const nodes = root.getElementsByTagName('*');
     root.style.opacity = "0.5";
     for(let i = 0; i < nodes.length; i++){
-        nodes[i].disabled = true;	
+        nodes[i].disabled = true;
     }
 
-    document.getElementById("contact_div").style.display = "flex";
+    contactDiv.classList.add("toggle_contact_div");
 }
 
 function hideContactDetails() {
-    const nodes = document.getElementById("root").getElementsByTagName('*');
+    const nodes = root.getElementsByTagName('*');
     root.style.opacity = "1";
     for(let i = 0; i < nodes.length; i++){
-        nodes[i].disabled = false;	
+        nodes[i].disabled = false;
     }
 
-    document.getElementById("contact_div").style.display = "none";
+    contactDiv.classList.remove("toggle_contact_div");
 }
 
 const button = document.getElementsByClassName("button_for_connection");
